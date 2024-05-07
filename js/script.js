@@ -1,4 +1,5 @@
 let userInfo=0
+
 let url = "https://randomuser.me/api/"
 let xhr = new XMLHttpRequest();
 xhr.open("GET",url,true);
@@ -55,6 +56,7 @@ function showPass(){
     <p>My password is</p>
     <span>${userInfo.login.password}</span>`
 }
+
 
 
 let coso = document.getElementById("info")
