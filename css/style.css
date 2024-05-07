@@ -33,6 +33,11 @@ body{
 .logos{
     width: 3em;
 }
+.logo:hover{
+    filter: saturate(30%);
+    filter: contrast(200%);
+    filter: hue-rotate(90deg);
+}
 span{
     font-size: 2em;
 }
