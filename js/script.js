@@ -1,5 +1,4 @@
 let userInfo=0
-
 let url = "https://randomuser.me/api/"
 let xhr = new XMLHttpRequest();
 xhr.open("GET",url,true);
@@ -16,7 +15,6 @@ xhr.onreadystatechange = function(){
     }
 }
 xhr.send();
-
 function showName(){  
    let newinfo = document.getElementById("info")
    newinfo.innerHTML = `
@@ -56,9 +54,3 @@ function showPass(){
     <p>My password is</p>
     <span>${userInfo.login.password}</span>`
 }
-
-
-
-let coso = document.getElementById("info")
-coso.addEventListener("mouseover", showName(), false);
-coso.addEventListener("mouseout", showName(), false);
