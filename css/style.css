@@ -32,11 +32,23 @@ body{
 }
 .logos{
     width: 3em;
+    filter: grayscale(100%);
 }
-.logo:hover{
-    filter: saturate(30%);
-    filter: contrast(200%);
-    filter: hue-rotate(90deg);
+.weee:hover{
+    .logos{
+        animation: wee 0.7s 0s;
+    }
+}
+
+@keyframes wee {
+    0%{
+        transform: translateY(0em);
+
+    }
+    100%{
+        transform: translateY(-3em);
+        filter: grayscale(0%);
+    }
 }
 span{
     font-size: 2em;
