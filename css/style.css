@@ -60,12 +60,11 @@ body{
 
 @keyframes wee {
     0%{
-        
         transform: translateY(0em);
 
     }
     100%{
-        transform: translateY(-3em);
+        transform: translateY(-4em);
         filter: grayscale(0%);
     }
 }
