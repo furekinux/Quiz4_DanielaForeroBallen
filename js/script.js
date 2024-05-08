@@ -15,6 +15,7 @@ xhr.onreadystatechange = function(){
     }
 }
 xhr.send();
+
 function showName(){  
    let newinfo = document.getElementById("info")
    newinfo.innerHTML = `
@@ -61,3 +62,6 @@ let arrows = document.getElementsByClassName("arrow")
 icons.onmouseenter = function() {
     this.style.display = 'initial'
 }
+
+
+document.oncontextmenu = function(){return false;}
