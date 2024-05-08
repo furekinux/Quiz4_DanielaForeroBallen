@@ -54,3 +54,10 @@ function showPass(){
     <p>My password is</p>
     <span>${userInfo.login.password}</span>`
 }
+
+let icons = document.getElementById("logo1")
+let arrows = document.getElementsByClassName("arrow")
+
+icons.onmouseenter = function() {
+    this.style.display = 'initial'
+}
